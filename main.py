@@ -1,10 +1,4 @@
 from collections import deque
-
-
-# ==========================================
-# 1. BINARY TREE TRAVERSALS (CANDOL)
-# ==========================================
-
 class TreeNode:
     def __init__(self, val):
         self.val = val
@@ -40,10 +34,6 @@ def tree_dfs_preorder(node, output=None):
     return output
 
 
-# ==========================================
-# 2. GRAPH TRAVERSALS (Adjacency List)
-# ==========================================
-
 def graph_bfs(graph, start_node):
     visited = set()
     queue = deque([start_node])
@@ -77,10 +67,6 @@ def graph_dfs(graph, start_node, visited=None, output=None):
 
     return output
 
-
-# ==========================================
-# MAIN EXECUTION (Mao ni ang mo-trigger sa output)
-# ==========================================
 if __name__ == "__main__":
     print("=== CC204 DATA STRUCTURES ASSESSMENT ===")
 
